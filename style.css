@@ -1,0 +1,22 @@
+.table td, .table th{
+    vertical-align: middle;
+}
+
+.container{
+    padding-top: 30px;
+}
+
+#form{
+    border: 1px solid silver;
+    border-radius: 10px;
+    padding: 40px 40px 50px;
+}
+
+.col-4{
+    padding-right: 40px;
+}
+
+
+.col-8{
+    padding-left: 40px;
+}
