@@ -52,6 +52,7 @@ async function addOrUpdateData(){
             },
             body: JSON.stringify({name, email})
         })
+        document.getElementById("id").value = "";
         document.getElementById("submit-button").innerHTML = "Add";
         getData();
     }
