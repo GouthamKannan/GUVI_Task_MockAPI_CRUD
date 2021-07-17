@@ -28,6 +28,7 @@ async function addOrUpdateData(){
     let id = document.getElementById("id").value;
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
+    document.getElementById("form").reset();
     if(id === ""){
 
         //Add data
@@ -38,7 +39,6 @@ async function addOrUpdateData(){
             },
             body: JSON.stringify({name, email})
         })
-        document.getElementById("form").reset();
         getData();
 
     }
@@ -52,11 +52,10 @@ async function addOrUpdateData(){
             },
             body: JSON.stringify({name, email})
         })
-        document.getElementById("form").reset();
         document.getElementById("submit-button").innerHTML = "Add";
         getData();
-
     }
+    return false;
 }
 
 async function deleteData(userId){
